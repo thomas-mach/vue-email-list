@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    
+    <title>vue-email-list</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        
+    <div id="app">
+        <ul
+            v-if="emails.length === 10"
+            v-for="el in emails">
+            <li class="emali style"><a href="#">{{el}}</a></li>
+        </ul>
+    </div>
+        
+    <script src="/js/app.js"></script>
+</body>
+</html>
