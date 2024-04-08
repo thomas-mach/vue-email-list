@@ -12,10 +12,10 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         
     <div id="app">
-        <ul
-            v-if="emails.length === 10"
-            v-for="el in emails">
-            <li class="emali style"><a href="#">{{el}}</a></li>
+        <ul v-if="emails.length === 10">
+            <li v-for="el in emails">
+                <a href="#">{{el}}</a>
+            </li>
         </ul>
     </div>
         
